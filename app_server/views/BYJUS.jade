@@ -1,0 +1,68 @@
+extends layout
+
+block content
+  .row.page-header(style="margin-bottom: 20px;")
+    .col-lg-12
+      h1(style="margin-top: 20px;") BYJU'S
+
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p LB Nagar
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening hours
+            .panel-body
+              p Monday - Friday : 10:00am - 06:30pm
+              p Saturday : 10:00am - 08:00pm
+              p Sunday : 6:00am - 10:00am
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.4040155324733!2d78.5508844757785!3d17.344281604044337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9921aa560d3d%3A0x8969fdd6957e671e!2sBYJU&#39;S%20Tuition%20Centre%20-%20LB%20Nagar!5e0!3m2!1sen!2sin!4v1729266877282!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Sriker-
+                    small.reviewTimestamp 17 April 2019
+                  .col-xs-12
+                    p Enlightful Experience
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Wedhkanth-
+                    small.reviewTimestamp 16 July 2020
+                  .col-xs-12
+                    p Great Learning Experience
+    .col-xs-12.col-md-3
+      p.lead
+        |BYJU'S The Learning App- With a holistic approach towards education, the app makes learning interactive, adaptive, and personalized through its animated videos, games, quizzes, and more. Celebrating every type of learner, BYJU'S programs use technology to adapt to the needs of each student's style and pace.

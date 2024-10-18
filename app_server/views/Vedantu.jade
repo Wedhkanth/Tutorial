@@ -1,0 +1,68 @@
+extends layout
+
+block content
+  .row.page-header(style="margin-bottom: 20px;")
+    .col-lg-12
+      h1(style="margin-top: 20px;") Vedantu
+
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p Dilsukhnagar
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening hours
+            .panel-body
+              p Monday - Friday : 10:00am - 06:30pm
+              p Saturday : 10:00am - 08:00pm
+              p Sunday : 6:00am - 10:00am
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.990099779873!2d78.54276729999997!3d17.364209400000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99005cc21fb1%3A0x37fa2088d9c4773c!2sVedantu%20Learning%20Centre(VLC)%20-%20Dilsukhnagar%20-%20JEE%20%2F%20NEET%20%2F%20Foundation!5e0!3m2!1sen!2sin!4v1729266292022!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Hemanth Reddy
+                    small.reviewTimestamp 17 April 2019
+                  .col-xs-12
+                    p Enlightful Experience
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Gautham 
+                    small.reviewTimestamp 16 July 2020
+                  .col-xs-12
+                    p Great Learning Experience
+    .col-xs-12.col-md-3
+      p.lead
+        |Vedantu is India's leading Online tutoring company which enables personalized learning. Vedantu delivers quality education with cutting edge technology which brings India's Top Teachers and students together in a LIVE interactive e-classroom.
